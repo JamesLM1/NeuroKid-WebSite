@@ -1,0 +1,491 @@
+/* Fuente principal */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F0F1F5;
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #a0dc80;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: rgb(109, 106, 106);
+}
+
+.logo img {
+    height: 4.5rem;
+    width: auto;
+    padding-right: 0.5rem;
+}
+
+.menu-toggle{
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #d7edcc;
+}
+
+/* Sección inicio */
+.inicio-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    background-color: #e6f4df;
+    padding: 40px 20px;
+}
+
+.inicio-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    gap: 40px;
+}
+
+.texto-contenido {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.titulo-principal {
+    font-size: 2.8em;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.descripcion {
+    font-size: 1.2em;
+    color: #1a1a1a;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Imagen lateral */
+.imagen-lateral {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.imagen-lateral img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección Reporte */
+.reporte-section {
+    background-color: #cbebbc;
+    padding: 70px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-reportes {
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+}
+
+.titulo-reportes {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    color: #0c0c0c;
+}
+
+/* Pacientes */
+.pacientes-section {
+    background-color: #dbf2d0;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-pacientes {
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+}
+
+.titulo-pacientes {
+    font-size: 2em;
+    color: #0c0c0c;
+    margin: 20px 0 50px;
+}
+
+/* Caja de pacientes */
+.pacientes-box {
+    flex: 1;
+    min-width: 300px;
+    background-color: #ffffff;
+    border: 1px solid #555;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.paciente {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.paciente img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.paciente p {
+    margin: 0;
+    font-size: 0.95em;
+    color: #222;
+    line-height: 1.4;
+}
+
+
+/* Caja de Reseñas */
+.seccion-sesiones {
+  padding: 6rem 2rem 3rem 2rem;
+  background-color: #e6f4df;
+}
+
+.sesiones-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.sesiones-form,
+.sesiones-lista {
+  flex: 1 1 400px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+}
+
+.sesiones-form h2,
+.sesiones-lista h2 {
+  font-size: 1.5rem;
+  color: #0c0c0c;
+  margin-bottom: 1rem;
+}
+
+.sesiones-form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.sesiones-form input,
+.sesiones-form select,
+.sesiones-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.sesiones-form button {
+  margin-top: 1.6rem;
+  padding: 0.7rem;
+  width: 100%;
+  background-color: #0e7c61;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.sesiones-form button:hover {
+  background-color: #0c5d48;
+}
+
+#listaSesiones {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.sesion-item {
+  background-color: #e8f5e9;
+  border-left: 5px solid #0e7c61;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  font-size: 0.95rem; 
+}
+
+/* Footer */
+.footer {
+    background-color: #f0fcf7;
+    border-top: 1px solid #bfc5d2;
+    padding: 20px 40px;
+    font-size: 0.95em;
+}
+
+.footer-contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: #1a1a1a;
+}
+
+.footer-left {
+    margin-bottom: 10px;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-right a {
+    color: #1a1a1a;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-right a:hover {
+    color: #0b3a86;
+}
+
+.social-icons a {
+    margin: 0 8px;
+    font-size: 1.4rem;
+    color: #1a1a1a;
+}
+
+.social-icons a:hover {
+    color: #0b3a86;
+}
+
+/* mensajeerroorjavaformmensajeapli */
+.message, .error {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+  display: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+.message {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* Responsive */
+@media (max-width:768px){
+    .menu-toggle{
+        display: block;
+    }
+
+    nav ul{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #ade390;
+        position: absolute;
+        top: 6rem;
+        left: 0;
+    }
+
+    nav ul.active{
+        display: flex;
+    }
+
+    nav ul.li{
+        border-bottom: 1px solid #ccc;
+    }
+
+    .inicio-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .texto-contenido {
+        margin-left: 0;
+        max-width: 90%;
+    }
+
+    .imagen-lateral img {
+        max-width: 90%;
+    }
+
+    .reporte-section iframe{
+        max-width: 90%;
+    }
+
+    .sesiones {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-contenido {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .footer-right {
+        justify-content: center;
+    }
+}
+
+/* Footer */
+
+.footer {
+  background-color: #243f24; /* Gris plomo más claro */
+  color: white;
+  padding: 2rem 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Contenedor flexible para 3 columnas */
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 2rem;
+}
+
+/* Marca o logotipo */
+.footer-brand {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-logo {
+  width: 60px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+/* Enlaces legales */
+.footer-links {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-links a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin: 0.3rem 0;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+/* Redes sociales con íconos */
+.footer-social {
+  flex: 1;
+  min-width: 200px;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 0.5rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-social img {
+    margin-bottom: 0.5rem;
+  }
+}
