@@ -52,3 +52,15 @@ document.addEventListener("DOMContentLoaded", () => {
     lista.prepend(li);
   }
 });
+
+function mostrarBibliografia() {
+    // Obtener el elemento de la lista de bibliografía
+    var bibliografia = document.getElementById("bibliografia");
+    
+    // Cambiar la propiedad display para mostrar o esconder la lista
+    if (bibliografia.style.display === "none" || bibliografia.style.display === "") {
+        bibliografia.style.display = "block";
+    } else {
+        bibliografia.style.display = "none";
+    }
+}
