@@ -405,3 +405,83 @@ nav ul li:hover .Menu_vertical {
     margin-bottom: 0.5rem;
   }
 }
+
+
+/* Sección Video Demo */
+.demo-video-section {
+    background-color: #f0f1f5;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.demo-video-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1200px;
+    gap: 40px;
+}
+
+.demo-video-texto {
+    flex: 1;
+    min-width: 300px;
+}
+
+.demo-video-texto h2 {
+    font-size: 2em;
+    margin: 10px 0 20px;
+    color: #111;
+}
+
+.demo-video-texto p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.demo-video-texto .btn-demo {
+    display: inline-block;
+    background-color: #a0dc80;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.demo-video-texto .btn-demo:hover {
+    background-color: #88c168;
+}
+
+.demo-video-imagen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.demo-video-imagen iframe {
+    max-width: 100%;
+    width: 100%;
+    max-width: 640px; /* Ajuste el tamaño máximo del video */
+    height: 360px;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+    .demo-video-texto h2 {
+        font-size: 1.5rem;
+    }
+
+    .demo-video-texto p {
+        font-size: 1rem;
+    }
+
+    .demo-video-imagen iframe {
+        width: 100%;
+        height: 300px;
+    }
+}
