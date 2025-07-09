@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroKid</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/styles/iniciodoc.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="Logo NeuroKid" /> Neurokid
+        </div>
+        <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+        <nav>
+            <ul>
+                <li><a href="#reporte">Escribir un reporte</a></li>
+                <li><a href="#pacientes">Mis pacientes</a></li>
+                <li><a href="#sesiones">Citar Paciente</a></li>
+                <li><a href="index.html">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Inicio -->
+    <section id="inicio" class="inicio-section">
+        <div class="inicio-container">
+            <div class="texto-contenido">
+                <h1 class="titulo-principal">Bienvenido!</h1>
+            </div>
+            <div class="imagen-lateral">
+                <img src="perfil.png" alt="Foto de Perfil de Usuario">
+            </div>
+        </div>
+    </section>
+
+    <!-- Reporte -->
+    <section id="reporte" class="reporte-section">
+        <div class="contenedor-reporte">
+            <h2 class="titulo-reportes">Reporte detallado: </h2>
+            <iframe src = "https://docs.google.com/document/d/1nnSsm8pJXxClT-gVTKw5VAmM5Qd1Ts3DKJ5NSfX2Gs4/preview" width = "808" height = "600"></iframe>
+        </div>
+    </section>
+
+    <!-- Pacientes -->
+    <section id="pacientes" class="pacientes-section">
+        <div class="contenedor-pacientes">
+            <h2 class="titulo-pacientes">Mira tus pacientes!</h2>
+
+            <div class="pacientes-box">
+                <p class="subtitulo"><strong><em>Pacientes atendidos</em></strong></p>
+                <div class="paciente">
+                    <img src="assets/images/perfil.png" alt="Avatar">
+                    <p><strong>Toñito Martinez, paciente de 10 años de edad</strong><br>
+                        “Necesito ayuda para poder concentrarme más en mis clases.”</p>
+                </div>
+                <div class="paciente">
+                    <img src="assets/images/perfil.png" alt="Avatar">
+                    <p><strong>Maria Antonieta de las Nieves, paciente de 8 años de edad</strong><br>
+                        “Me distraigo mucho durante mis clases y eso perjudica mi rendimiento académico.
+                        Necesito ayuda.”</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Programar sesión -->
+    <section id="sesiones" class="seccion-sesiones">
+        <div class="sesiones-flex">
+            <!-- Formulario -->
+            <div class="sesiones-form">
+                <h2>La siguiente será:</h2>
+                <form id="formSesion">
+                    <label for="nombrePaciente">Nombre del Paciente:</label>
+                    <input type="text" id="nombrePaciente" required />
+
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" name="fecha" id="fecha">
+
+                    <label for="descSesion">Descripción:</label>
+                    <textarea id="descSesion" rows="4" placeholder="Escriba la reseña...." required></textarea>
+
+                    <button type="submit">Enviar Sesión</button>
+                </form>
+            </div>
+
+            <!-- Lista de sesiones -->
+            <div class="sesiones-lista">
+                <h2>Sesiones Marcadas</h2>
+                <ul id="listaSesiones"></ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-contenido">
+            <div class="footer-left">
+                <p>© 2025 <strong>Neurokid</strong>. Todos los derechos reservados.</p>
+            </div>
+            <div class="footer-right">
+                <a href="#">Términos de servicio</a>
+                <a href="#">Privacidad</a>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/upcedu" target="_blank" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/upcedu" target="_blank" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/universidad-peruana-de-ciencias-aplicadas/"
+                        target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.youtube.com/@UPCedupe" target="_blank" aria-label="YouTube"><i
+                            class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/scripts/main.js"></script>
+    <script src="assets/scripts/sesion.js"></script>
+</body>
+</html>

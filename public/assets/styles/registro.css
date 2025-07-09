@@ -1,0 +1,281 @@
+/* Fondo General */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #e6f4df;
+  color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Registros */
+.registros-section {
+    background-color: #dbf2d0;
+    padding: 80px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-registros {
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+    flex-direction: row;
+}
+
+.titulo-registros {
+    font-size: 2em;
+    color: #0c0c0c;
+    padding-top: 3rem;
+    margin: 20px 0 50px;
+}
+
+.bloques {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+
+/* Registro Izquierdo - Usuarios */
+.reg-user-container {
+  background: #FFFFFF;
+  padding: 35px 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 420px;
+  text-align: center;
+}
+
+.reg-user-container h1 {
+  font-family: 'Heebo', sans-serif;
+  margin-bottom: 25px;
+  color: #2f6f0c;
+}
+
+.reg-user-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.reg-user-container label {
+  margin: 10px 0 5px;
+  text-align: left;
+  font-weight: bold;
+  color: #2b7005;
+}
+
+.reg-user-container input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+}
+
+.reg-user-container .btn {
+  background: #87d65f;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.reg-user-container .btn:hover {
+  background: #abe591;
+}
+
+.reg-user-container p {
+  margin-top: 14px;
+  color: #1a1a1a;
+}
+
+.reg-user-container a {
+  color: #061cdf;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.reg-user-container a:hover {
+  color: #4F3F84;
+}
+
+/* Registro Derecho - Profesionales */
+.reg-pro-container {
+  background: #FFFFFF;
+  padding: 35px 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 420px;
+  text-align: center;
+}
+
+.reg-pro-container h1 {
+  font-family: 'Heebo', sans-serif;
+  margin-bottom: 25px;
+  color: #2f6f0c;
+}
+
+.reg-pro-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.reg-pro-container label {
+  margin: 10px 0 5px;
+  text-align: left;
+  font-weight: bold;
+  color: #2b7005;
+}
+
+.reg-pro-container input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+}
+
+.reg-pro-container .btn {
+  background: #87d65f;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.reg-pro-container .btn:hover {
+  background: #abe591;
+}
+
+.reg-pro-container p {
+  margin-top: 14px;
+  color: #1a1a1a;
+}
+
+.reg-pro-container a {
+  color: #061cdf;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.reg-pro-container a:hover {
+  color: #4F3F84;
+}
+
+
+
+
+
+
+
+/* Registro de Niño */
+.reg-nino-container {
+  background: #FFFFFF;
+  padding: 35px 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 420px;
+  text-align: center;
+}
+
+.reg-nino-container h1 {
+  font-family: 'Heebo', sans-serif;
+  margin-bottom: 25px;
+  color: #2f6f0c;
+}
+
+.reg-nino-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.reg-nino-container label {
+  margin: 10px 0 5px;
+  text-align: left;
+  font-weight: bold;
+  color: #2b7005;
+}
+
+.reg-nino-container input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+}
+
+.reg-nino-container .btn {
+  background: #87d65f;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.reg-nino-container .btn:hover {
+  background: #abe591;
+}
+
+/* mensajeerroorjavaformmensajeapli */
+.message, .error {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+  display: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+.message {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+@media (max-width: 768px){
+  .contenedor-registros{
+    margin-top: 80rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bloques {
+    flex-direction: column;
+  }
+}
