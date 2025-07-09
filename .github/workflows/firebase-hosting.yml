@@ -1,4 +1,5 @@
 name: Firebase Hosting
+
 on:
   push:
     branches:
@@ -14,7 +15,7 @@ jobs:
 
     - name: Set up Node.js
       uses: actions/setup-node@v2
-      with: 
+      with:
         node-version: '14'
 
     - name: Install dependencies
@@ -24,9 +25,11 @@ jobs:
       run: npm run build
 
     - name: Deploy to Firebase Hosting
-      uses: wzieba/Firebase-Action@v2
+      uses: firebase/action-hosting-deploy@v0
       with:
-        firebase_credentials: ${{ secrets.FIREBASE_CREDENTIALS }}
+        credentials: ${{ secrets.FIREBASE_CREDENTIALS }}
         project_id: ${{ secrets.FIREBASE_PROJECT_ID }}
+
+
 
 
