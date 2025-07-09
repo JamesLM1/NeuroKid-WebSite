@@ -21,7 +21,7 @@ body {
 
 .logo {
     display: flex;
-    align-items: center;
+    align-items: center;  /* Esto alinea verticalmente el logo y el texto */
     font-size: 28px;
     font-weight: 700;
     color: rgb(109, 106, 106);
@@ -31,6 +31,7 @@ body {
     height: 4.5rem;
     width: auto;
     padding-right: 0.5rem;
+    vertical-align: middle;  /* Esto asegura que el logo y el texto estén alineados */
 }
 
 .menu-toggle{
