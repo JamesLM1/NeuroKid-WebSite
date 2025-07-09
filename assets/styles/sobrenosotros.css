@@ -105,7 +105,7 @@ nav ul li:hover .Menu_vertical {
 
 .sobre-nosotros-section,
 .equipo-section {
-    background-color: #c0e3ae;
+    background-color: #b3df9d;
     /* <-- CAMBIO AQUÍ */
     padding: 60px 20px;
     text-align: center;
@@ -409,7 +409,7 @@ nav ul li:hover .Menu_vertical {
 
 /* Sección Video Demo */
 .demo-video-section {
-    background-color: #c0e3ae;
+    background-color: #daf3cd;
     padding: 80px 20px;
     display: flex;
     justify-content: center;
