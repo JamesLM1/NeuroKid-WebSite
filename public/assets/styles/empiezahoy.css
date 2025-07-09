@@ -356,3 +356,7 @@ nav ul li:hover .Menu_vertical {
     margin-bottom: 0.5rem;
   }
 }
+a {
+    text-decoration: none;
+    color: inherit;
+}

@@ -410,3 +410,8 @@ nav a:hover {
         justify-content: center;
     }
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
