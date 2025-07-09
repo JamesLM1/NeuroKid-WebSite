@@ -489,3 +489,90 @@ nav a:hover {
     margin-bottom: 0.5rem;
   }
 }
+
+/* === Sección de Soporte === */
+.support-section {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.support-section h2 {
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.support-section p {
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+/* Contenedor de los formularios */
+.forms-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap; /* Para que se adapten en dispositivos pequeños */
+}
+
+/* Caja de formularios */
+.form-box {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 48%; /* Para que los formularios se muestren uno al lado del otro */
+}
+
+.form-box h3 {
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.form-box p {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.form-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-box label {
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.form-box input,
+.form-box textarea {
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-box button {
+  padding: 0.75rem;
+  background-color: #a0dc80;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+}
+
+.form-box button:hover {
+  background-color: #8bc34a;
+}
+
+@media (max-width: 768px) {
+  .forms-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-box {
+    width: 80%; /* Ocupa el 80% del contenedor en dispositivos pequeños */
+  }
+}
+
