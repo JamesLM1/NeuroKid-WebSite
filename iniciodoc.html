@@ -77,6 +77,7 @@
 
     <!-- Programar sesión -->
     <section id="sesiones" class="seccion-sesiones">
+        <h2>Programación de Sesiones</h2>
         <div class="sesiones-flex">
             <!-- Formulario -->
             <div class="sesiones-form">
@@ -123,16 +124,17 @@
                     <textarea id="ticket-description" name="ticket-description" placeholder="Detalles del problema"
                         required></textarea>
 
-                    <a class="btn" href="docs/Ticket.pdf" download="Ticket">
+                    <a class="btn" href="docs/Ticket_Soporte_Tecnico.pdf" download="Ticket">
                         Enviar Ticket
                     </a>
                 </form>
             </div>
 
+            <!-- Formulario de Chat en Vivo -->
             <div class="form-box">
                 <h3>Iniciar Chat en Vivo</h3>
                 <p>Habla directamente con un agente de soporte a través del chat en vivo.</p>
-                <form>
+                <form id="chat-form">
                     <label for="chat-name">Tu Nombre:</label>
                     <input type="text" id="chat-name" name="chat-name" placeholder="Tu Nombre" required>
 
@@ -140,7 +142,7 @@
                     <textarea id="chat-message" name="chat-message" placeholder="Escribe tu mensaje"
                         required></textarea>
 
-                    <button type="submit">Iniciar Chat</button>
+                    <button type="submit" id="start-chat-btn">Iniciar Chat</button>
                 </form>
             </div>
         </div>

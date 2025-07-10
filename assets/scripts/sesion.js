@@ -2,40 +2,49 @@ document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("formSesion");
   const lista = document.getElementById("listaSesiones");
 
+  // Obtener las sesiones guardadas en localStorage (si existen)
   const sesionesGuardadas = JSON.parse(localStorage.getItem("sesionesConPerfil")) || [];
-  sesionesGuardadas.forEach(sesion => agregarsesionConPerfil(sesion));
+  
+  // Mostrar las sesiones guardadas en la lista
+  sesionesGuardadas.forEach(sesion => agregarSesionConPerfil(sesion));
 
+  // Manejo del envío del formulario
   form.addEventListener("submit", function (e) {
-    e.preventDefault();
+    e.preventDefault(); // Evitar la recarga de la página
 
+    // Obtener los valores del formulario
     const nombre = document.getElementById("nombrePaciente").value.trim();
     const descripcion = document.getElementById("descSesion").value.trim();
+    const fecha = document.getElementById("fecha").value; // Obtener la fecha seleccionada
 
-    if (!nombre || !descripcion) {
+    // Verificar que los campos no estén vacíos
+    if (!nombre || !descripcion || !fecha) {
       alert("Por favor, complete todos los campos antes de enviar.");
       return;
     }
 
-    const fecha = new Date().toLocaleDateString("es-PE", {
-      day: "2-digit",
-      month: "long",
-      year: "numeric",
-    });
-
+    // Crear un objeto para la nueva sesión
     const nuevaSesion = {
       nombre,
       descripcion,
       fecha,
-      imagen: "perfil.png" // Imagen por defecto
+      imagen: "perfil.png", // Imagen por defecto
     };
 
+    // Agregar la nueva sesión al principio del arreglo
     sesionesGuardadas.unshift(nuevaSesion);
+
+    // Guardar las sesiones en localStorage
     localStorage.setItem("sesionesConPerfil", JSON.stringify(sesionesGuardadas));
 
+    // Agregar la sesión a la lista visualmente
     agregarSesionConPerfil(nuevaSesion);
+
+    // Limpiar el formulario
     form.reset();
   });
 
+  // Función para agregar la sesión a la lista en la página
   function agregarSesionConPerfil({ nombre, descripcion, fecha, imagen }) {
     const li = document.createElement("li");
     li.className = "sesion-item";
@@ -49,9 +58,11 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
       </div>
     `;
-    lista.prepend(li);
+    lista.prepend(li); // Insertar la nueva sesión al inicio de la lista
   }
 });
+
+
 
 function mostrarBibliografia() {
     // Obtener el elemento de la lista de bibliografía
@@ -149,6 +160,26 @@ function mostrarPerfil() {
     // Mostrar la sección con los datos
     document.getElementById('profileInfo').style.display = 'block';
 }
+
+
+
+
+// Validar formulario de chat en vivo
+document.getElementById("chat-form").addEventListener("submit", function (e) {
+  e.preventDefault(); // Prevenir el comportamiento por defecto (recargar la página)
+
+  const chatName = document.getElementById('chat-name').value;
+  const chatMessage = document.getElementById('chat-message').value;
+
+  // Verificar si los campos del chat están completos
+  if (chatName && chatMessage) {
+    alert('En breves nos comunicaremos contigo. ¡Gracias por tu paciencia!');
+  } else {
+    alert('Por favor, completa todos los campos antes de enviar el chat.');
+  }
+});
+
+
 
 
 
