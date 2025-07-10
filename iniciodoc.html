@@ -123,7 +123,9 @@
                     <textarea id="ticket-description" name="ticket-description" placeholder="Detalles del problema"
                         required></textarea>
 
-                    <button type="submit">Enviar Ticket</button>
+                    <a class="btn" href="docs/Ticket.pdf" download="Ticket">
+                        Enviar Ticket
+                    </a>
                 </form>
             </div>
 
@@ -170,6 +172,62 @@
                     <!-- Agregar más recursos si es necesario -->
                 </ul>
             </div>
+        </div>
+    </section>
+
+    <!-- Sección Agregar Notas Clínicas -->
+    <section id="notas" class="notas-section">
+        <div class="notas-container">
+            <h2>Agregar Nota Clínica</h2>
+            <p>Como psicólogo, puedes añadir observaciones clínicas al perfil de un estudiante para registrar tus
+                apreciaciones.</p>
+
+            <!-- Selector de Estudiantes -->
+            <label for="estudiantes">Seleccionar Estudiante:</label>
+            <select id="estudiantes" name="estudiantes" class="select-estudiantes">
+                <option value="estudiante1">Estudiante 1</option>
+                <option value="estudiante2">Estudiante 2</option>
+                <option value="estudiante3">Estudiante 3</option>
+                <option value="estudiante4">Estudiante 4</option>
+                <option value="estudiante5">Estudiante 5</option>
+            </select>
+
+            <!-- Comentario y Guardar Nota -->
+            <label for="comentario">Escribe tu comentario:</label>
+            <textarea id="comentario" name="comentario" rows="5" placeholder="Escribe las notas aquí..."
+                class="textarea-comentarios"></textarea>
+
+            <button type="submit" class="btn-agregar-nota" onclick="guardarNota()">Guardar Nota</button>
+
+            <!-- Notas Guardadas -->
+            <div id="notas-guardadas" class="notas-guardadas">
+                <h3>Notas Guardadas:</h3>
+                <ul id="lista-notas"></ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="ver-datos-paciente">
+        <h2>Ver Datos del Paciente</h2>
+
+        <!-- Selector de paciente (en este caso estudiantes) -->
+        <select id="pacienteSelector" onchange="mostrarPerfil()">
+            <option value="0">Seleccionar Paciente</option>
+            <option value="1">Estudiante 1</option>
+            <option value="2">Estudiante 2</option>
+            <option value="3">Estudiante 3</option>
+            <option value="4">Estudiante 4</option>
+        </select>
+
+        <!-- Botón para mostrar perfil -->
+        <button class="profile-btn" onclick="mostrarPerfil()">Ver Perfil</button>
+
+        <!-- Información del paciente que se muestra después de hacer clic -->
+        <div class="profile-info" id="profileInfo" style="display:none;">
+            <h3>Datos del Paciente</h3>
+            <p><strong>Edad:</strong> <span id="edad"></span></p>
+            <p><strong>Nivel Escolar:</strong> <span id="nivelEscolar"></span></p>
+            <p><strong>Comentarios:</strong> <span id="comentarios"></span></p>
         </div>
     </section>
 
